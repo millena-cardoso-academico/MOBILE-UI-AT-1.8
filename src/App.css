@@ -1,0 +1,142 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e0f7fa;
+}
+
+.card-container {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.info-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.info {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px 0;
+}
+
+.task-section {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.task-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.table-header {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-data {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-section {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .info-section {
+    flex: 2;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .icon-section {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .icon {
+    margin: 10px 0;
+  }
+
+  .task-section {
+    padding: 20px;
+  }
+
+  .task-table {
+    margin-right: 20px;
+  }
+}
